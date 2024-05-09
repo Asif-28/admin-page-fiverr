@@ -17,6 +17,9 @@ interface FormData {
 const categories = ["AMMO", "FOOD", "FUEL", "TOOL"];
 
 const Form: React.FC = () => {
+  const options = ["AMMO", "FOOD", "FUEL", "TOOL"];
+  const [selectedOption, setSelectedOption] = useState<string>("AMMO");
+  const [isOpen, setIsOpen] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>({
     category: "AMMO",
     minBuyQuantity: 0,
@@ -106,9 +109,17 @@ const Form: React.FC = () => {
     console.log(formData);
     // Proceed with form submission
   };
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
 
+  const handleOptionClick = (option: string) => {
+    setSelectedOption(option);
+    setIsOpen(false);
+  };
+  console.log(selectedOption);
   return (
-    <main className="min-w-[400px] mx-auto">
+    <main className="md:min-w-[400px] mx-auto">
       <ToastContainer
         position="top-center"
         autoClose={2000}
@@ -122,7 +133,7 @@ const Form: React.FC = () => {
         theme="light"
       />
       <div className="flex ">
-        <div className="shadow-xl px-8 bg-[#fff] py-6 rounded-lg  mb-10 mr-2 md:mr-0 ">
+        <div className="shadow-xl px-8 bg-[#fff] py-6 md:py-6 rounded-lg  mb-6 md:mb-10  md:mr-0 ">
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col w-auto mb-4">
               <label
@@ -131,7 +142,7 @@ const Form: React.FC = () => {
               >
                 Categories:
               </label>
-              <select
+              {/* <select
                 required={true}
                 className=" bg-white inline-flex justify-center w-full  text-sm appearance-none border-[.5px] font-light border-gray-500 rounded-xl py-[.6rem] px-4 text-gray-700 leading-tight focus:outline-[#392467] focus:shadow-outline"
                 id="category"
@@ -144,7 +155,25 @@ const Form: React.FC = () => {
                     {category}
                   </option>
                 ))}
-              </select>
+              </select> */}
+              <div className="dropdown relative border-[0.5px] border-black px-3 py-2 max-w-md rounded-xl bg-[#fff] cursor-pointer">
+                <div className="dropdown-header " onClick={toggleDropdown}>
+                  {selectedOption}{" "}
+                </div>
+                {isOpen && (
+                  <div className="dropdown-options bg-gray-800 text-[#fff] absolute max-w-md w-full px-4 py-5 rounded-lg top-12 -left-[2px]">
+                    {options.map((option, index) => (
+                      <div
+                        key={index}
+                        className="dropdown-option py-2 cursor-pointer hover:bg-gray-700 px-3 rounded-lg "
+                        onClick={() => handleOptionClick(option)}
+                      >
+                        {option}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
             <div className="flex flex-col w-auto mb-4">
               <label
