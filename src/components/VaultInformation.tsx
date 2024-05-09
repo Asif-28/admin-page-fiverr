@@ -63,7 +63,7 @@ const VaultInformation = () => {
           </h1>
           <h1 className="text-base font-medium mb-1">Resource_MINT:</h1>
           <h1 className="text-base font-medium mb-1">
-            Beneficiary_resource_account
+            Beneficiary_resource_account:
           </h1>
         </div>
         <div className="flex flex-col px-5 md:px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
