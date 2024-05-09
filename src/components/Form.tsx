@@ -122,7 +122,7 @@ const Form: React.FC = () => {
         theme="light"
       />
       <div className="flex ">
-        <div className="shadow-xl px-8 bg-[#fff] py-6 rounded-lg  mb-10 ">
+        <div className="shadow-xl px-8 bg-[#fff] py-6 rounded-lg  mb-10 mr-2 md:mr-0 ">
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col w-auto mb-4">
               <label
