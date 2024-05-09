@@ -42,32 +42,32 @@ const VaultInformation = () => {
         </div>
       </div>
       <div className="flex flex-col gap-5 w-full ">
-        <div className="flex flex-col px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
-          <h1 className="text-base font-medium ">Vault Owner:</h1>
+        <div className="flex flex-col px-5 md:px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
+          <h1 className="text-base font-medium mb-1">Vault Owner:</h1>
         </div>
-        <div className="flex flex-col px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
-          <h1 className="text-base font-medium ">Vault Pubkey:</h1>
-          <h1 className="text-base font-medium ">AMMO Ammount:</h1>
-          <h1 className="text-base font-medium ">ATLAS Ammount</h1>
+        <div className="flex flex-col px-5 md:px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
+          <h1 className="text-base font-medium mb-1">Vault Pubkey:</h1>
+          <h1 className="text-base font-medium mb-1">AMMO Ammount:</h1>
+          <h1 className="text-base font-medium mb-1">ATLAS Ammount</h1>
         </div>
-        <div className="flex flex-col px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
-          <h1 className="text-base font-medium ">Minimun Buy Qty:</h1>
-          <h1 className="text-base font-medium ">Total Buy Cost:</h1>
-          <h1 className="text-base font-medium ">Minimun Sell Qty:</h1>
-          <h1 className="text-base font-medium ">Total Sell Cost:</h1>
+        <div className="flex flex-col px-5 md:px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
+          <h1 className="text-base font-medium mb-1">Minimun Buy Qty:</h1>
+          <h1 className="text-base font-medium mb-1">Total Buy Cost:</h1>
+          <h1 className="text-base font-medium mb-1">Minimun Sell Qty:</h1>
+          <h1 className="text-base font-medium mb-1">Total Sell Cost:</h1>
         </div>
-        <div className="flex flex-col px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
-          <h1 className="text-base font-medium ">ATLAS_MINT:</h1>
-          <h1 className="text-base font-medium ">
+        <div className="flex flex-col px-5 md:px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
+          <h1 className="text-base font-medium mb-1">ATLAS_MINT:</h1>
+          <h1 className="text-base font-medium mb-1">
             Beneficiary_atlast_account:
           </h1>
-          <h1 className="text-base font-medium ">Resource_MINT:</h1>
-          <h1 className="text-base font-medium ">
+          <h1 className="text-base font-medium mb-1">Resource_MINT:</h1>
+          <h1 className="text-base font-medium mb-1">
             Beneficiary_resource_account
           </h1>
         </div>
-        <div className="flex flex-col px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
-          <h1 className="text-base font-medium ">Beneficiary_percent:</h1>
+        <div className="flex flex-col px-5 md:px-10 py-8 rounded-lg mx-3 shadow-lg bg-slate-200 hover:bg-slate-300">
+          <h1 className="text-base font-medium mb-1">Beneficiary_percent:</h1>
         </div>
       </div>
     </main>
