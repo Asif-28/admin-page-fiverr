@@ -158,7 +158,7 @@ const Form: React.FC = () => {
                   </option>
                 ))}
               </select> */}
-              <div className="dropdown relative border-[0.5px] border-black px-3 py-2 max-w-md rounded-xl bg-[#fff] cursor-pointer">
+              <div className="dropdown relative border-[.5px] border-gray-500 px-3 py-2 max-w-md rounded-xl bg-[#fff] cursor-pointer">
                 <div
                   className="dropdown-header font-light cursor-pointer"
                   onClick={toggleDropdown}
