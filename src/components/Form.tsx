@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -142,6 +143,7 @@ const Form: React.FC = () => {
               >
                 Categories:
               </label>
+
               {/* <select
                 required={true}
                 className=" bg-white inline-flex justify-center w-full  text-sm appearance-none border-[.5px] font-light border-gray-500 rounded-xl py-[.6rem] px-4 text-gray-700 leading-tight focus:outline-[#392467] focus:shadow-outline"
@@ -159,6 +161,14 @@ const Form: React.FC = () => {
               <div className="dropdown relative border-[0.5px] border-black px-3 py-2 max-w-md rounded-xl bg-[#fff] cursor-pointer">
                 <div className="dropdown-header " onClick={toggleDropdown}>
                   {selectedOption}{" "}
+                </div>
+                <div className="absolute top-[40%] right-[10%]">
+                  <Image
+                    src={`/downarrow.png`}
+                    height={10}
+                    width={10}
+                    alt="arrow"
+                  />
                 </div>
                 {isOpen && (
                   <div className="dropdown-options bg-gray-800 text-[#fff] absolute max-w-md w-full px-4 py-5 rounded-lg top-12 -left-[2px]">

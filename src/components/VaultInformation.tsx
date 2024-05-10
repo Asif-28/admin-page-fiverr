@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 
 const VaultInformation = () => {
@@ -20,6 +21,9 @@ const VaultInformation = () => {
         <div className="dropdown relative border-[0.5px] border-black px-3 py-2 max-w-md rounded-md bg-[#fff] cursor-pointer">
           <div className="dropdown-header " onClick={toggleDropdown}>
             {selectedOption}{" "}
+          </div>
+          <div className="absolute top-[40%] right-[6%]">
+            <Image src={`/downarrow.png`} height={10} width={10} alt="arrow" />
           </div>
           {isOpen && (
             <div className="dropdown-options bg-gray-800 text-[#fff] absolute max-w-md w-full px-4 py-5 rounded-lg top-12 -left-[2px]">
