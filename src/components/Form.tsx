@@ -159,7 +159,10 @@ const Form: React.FC = () => {
                 ))}
               </select> */}
               <div className="dropdown relative border-[0.5px] border-black px-3 py-2 max-w-md rounded-xl bg-[#fff] cursor-pointer">
-                <div className="dropdown-header " onClick={toggleDropdown}>
+                <div
+                  className="dropdown-header font-light cursor-pointer"
+                  onClick={toggleDropdown}
+                >
                   {selectedOption}{" "}
                 </div>
                 <div className="absolute top-[40%] right-[10%]">
